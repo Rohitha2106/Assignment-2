@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Utility Website</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    
+    <div id="count-section">
+        <h1>Count Vowels and Consonants</h1>
+        <p> <strong> Enter a String:  </strong> </p>
+        <input type="text" id="countInput" placeholder="Enter a string" maxlength="15"/>
+        <button onclick="countCharacters()">Count</button>
+        <p>Vowels: <span id="vowelsCount">0</span></p>
+        <p>Consonants: <span id="consonantsCount">0</span></p>
+    </div>
+    
+    <div id="palindrome-section">
+        <h1>Check Palindrome</h1>
+        <input type="text" id="palindromeInput" placeholder="Enter a series of numbers" />
+        <button onclick="checkPalindrome()">Check</button>
+        <p id="palindromeResult"></p>
+    </div>
+
+    <div id="bill-section">
+        <h1>Calculate Total Bill</h1>
+        <input type="number" id="billInput" placeholder="Enter subtotal" />
+        <br>
+        <input type="number" id="tipInput" placeholder="Enter tip percentage" />
+        <button onclick="calculateTotal()">Calculate</button>
+        <p>Total Amount: <span id="totalAmount">0</span></p>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
